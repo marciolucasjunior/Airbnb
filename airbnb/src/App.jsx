@@ -1,12 +1,22 @@
 //Importar Bootstrap
-import 'booststrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap'
+
+//import CSS GERAL
+
+import './App.css'
+
+//importar Components
+import Navbar from './Components/Navbar'
 
 function App() {
  
 
   return (
       
-    <h1>Funcionando</h1>
+    <div>
+        <Navbar />
+    </div>
       
   )
 }
