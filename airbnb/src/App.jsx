@@ -9,6 +9,9 @@ import './App.css'
 //importar Components
 import Navbar from './Components/Navbar'
 
+//importar material design icons
+import '@mdi/font/css/materialdesignicons.css'
+
 function App() {
  
 
