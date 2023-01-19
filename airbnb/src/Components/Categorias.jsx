@@ -1,43 +1,68 @@
 import React from 'react'
 
+import { useState } from 'react';
+
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import"swiper/css/navigation";
 
 
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination,Navigation } from "swiper";
 
 //importar css
 import './CSS/Categorias.css'
 
+//importar dados da categoria
+
+import { categorias } from '../../../backend/dados';
+
+
+
+
+
 export default function Categorias() {
+//Código do componente
+
+const [idClicado, setIdClicado] = useState(1)
+
+const handleClick = (e,id)=> {
+  setIdClicado(id)
+}
+
+
   return (
-    <div className='container-fluid border border-danger'>
-        <div className='container-airbnb border boder-info row'>
+    <div className='container-fluid d-flex justify-content-between align-items-center  border border-danger'>
+        <div className='d-flex aling-items-center container-airbnb border boder-info row'>
             <div className='col-sm-11'>
             <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
+        slidesPerView={14}
+        slidesPerGroup={13}
+        spaceBetween={7}
+        pagination={false}
+        navigation={true}
+        modules={[Pagination,Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {
+          categorias.map((dados,index)=>(
+            <SwiperSlide key={dados.id}
+            virtualIndex={index}
+            className={dados.id === idClicado ? 'active' : ''}
+            onClick={(e) => handleClick(e , dados.id)}>
+             
+              <img className='mb-2' src={dados.imagem}/>
+              <span>{dados.titulo}</span>
+            </SwiperSlide>
+          ))
+        }
+        
       </Swiper>
             </div>
             <div className='col-sm-1'>
