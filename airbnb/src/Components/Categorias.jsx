@@ -39,7 +39,7 @@ const handleClick = (e,id)=> {
 
 
   return (
-    <div className='container-fluid d-flex justify-content-between align-items-center '>
+    <div className='pt-2 container-fluid d-flex justify-content-between align-items-center '>
         <div className='d-flex align-items-center container-airbnb row'>
             <div className='col-sm-11'>
             <Swiper
@@ -67,7 +67,7 @@ const handleClick = (e,id)=> {
       </Swiper>
             </div>
             <div className=' col-sm-1'>
-               aqui filtro
+               <button data-bs-toggle='modal' data-bs-target="#gilterModal"></button>
             </div>
         </div>
     </div>
