@@ -33,6 +33,7 @@ export default function Categorias() {
 const [idClicado, setIdClicado] = useState(1)
 
 const handleClick = (e,id)=> {
+  console.log('A categoria clicado é'+ id)
   setIdClicado(id)
 }
 
