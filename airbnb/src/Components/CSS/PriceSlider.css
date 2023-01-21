@@ -1,0 +1,15 @@
+.slider{
+    display: flex;
+    position: relative;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.slider  .progress{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    background: black;
+    height: 100%;
+}
