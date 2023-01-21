@@ -13,6 +13,7 @@ import Categorias from './Components/Categorias'
 //importar material design icons
 import '@mdi/font/css/materialdesignicons.css'
 
+import ModalFilter from './Components/ModalFilter'
 function App() {
  
 
@@ -21,6 +22,7 @@ function App() {
     <div>
         <Navbar />
         <Categorias />
+        <ModalFilter />
     </div>
       
   )

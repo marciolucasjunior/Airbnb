@@ -3,6 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 
 
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -67,7 +68,10 @@ const handleClick = (e,id)=> {
       </Swiper>
             </div>
             <div className=' col-sm-1'>
-               <button data-bs-toggle='modal' data-bs-target="#gilterModal"></button>
+               <button className='btn btn-filtro d-flex float-end'  data-bs-toggle='modal' data-bs-target=" #filterModal">
+                <i className=' mdi mdi-filter-variant' ></i>
+                Filtro
+               </button>
             </div>
         </div>
     </div>
