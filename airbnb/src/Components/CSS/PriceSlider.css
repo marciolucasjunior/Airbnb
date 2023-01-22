@@ -13,3 +13,17 @@
     background: black;
     height: 100%;
 }
+
+.range-input{
+    position: relative;
+}
+
+.range-input input{
+    width: 100%;
+    position: absolute;
+    height: 5px;
+    top:-5px;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

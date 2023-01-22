@@ -8,7 +8,7 @@ export default function PriceSlider() {
            <div className='progress'></div>
            <div className='range-input'>
             <input id='rangeMin' type="range" />
-            <input type="range" />
+            <input id='rangeMax' type="range" />
            </div>
         </div>
     </div>
