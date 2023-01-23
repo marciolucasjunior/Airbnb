@@ -20,6 +20,7 @@ export default function ModalFilter() {
            <p className='text-muted'>O preço médio por noite é de R$730</p>
            <PriceSlider />
          </section>
+         
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
