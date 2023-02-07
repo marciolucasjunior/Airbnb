@@ -6,10 +6,10 @@
     border-radius: 5px;
 }
 
-.slider  .progress{
+.slider .progress{
     position: absolute;
-    left: 10%;
-    right: 10%;
+  /*  left: 10%; 
+    right: 10%;  */
     background: black;
     height: 100%;
 }
@@ -39,5 +39,5 @@ input[type="range"]::-webkit-slider-thumb{
     border-radius: 50%;
     -webkit-appearance: none;
     pointer-events: auto;
-    point
+    
 }

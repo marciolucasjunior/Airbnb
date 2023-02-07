@@ -18,7 +18,7 @@ export default function ModalFilter() {
          <section className='px-2 mb-4 border-bottom'>
            <span className='fs-4 fw-bold'>Faixa de Preço</span>
            <p className='text-muted'>O preço médio por noite é de R$730</p>
-           <PriceSlider />
+           <PriceSlider min={50} max={2000} step={1} />
          </section>
          
       </div>
